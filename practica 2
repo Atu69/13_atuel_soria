@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head> <h5>Práctica 1</h5>
+    <head> <h5>Práctica 2</h5>
 
     </head>
     <body>
         <h1><i><u>Koundé es el mejor del mundo</u></i></h1>
         <h2><b><mark>Javier tiene mas años que una piedra</mark></b></h2>
         <p><mark>Alopecia</mark> <mark>Javier</mark></p>
+        <p><em>Calvicie</em></p>
+        <p><strong>Pelao</strong></p>
+        <p><big>Mayor</big></p>
+        <p><small>Geriátrico</small></p>
+        <p><sub>Anciano</sub></p>
+        <p><sup>Pelo</sup></p>
+        <p><ins>Implante=30k</ins></p>
+        <p><del>BMW 50cts</del></p>
         
     </body>
 </html>
