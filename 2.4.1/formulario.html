@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form_button{
+            display: block;
+            margin-top: 15px;
+            background-color: rgb(79, 60, 96);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto: asoriabosso@gmail.com">
+        <fieldset>
+            <legend>Personajes</legend>
+            <label for="name">Superhéroe favorito</label>
+            <input list="Superhéroe" name="Superhéroe">
+                <datalist id="Superhéroe">
+                    <option value="Capitán América">
+                    <option value="Superman">
+                    <option value="Thor">
+                    <option value="Ironman">
+                    <option value="Hulk">
+                </datalist>
+            <br>
+            <label for="name">Color:
+                <input type="color">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" id="nombre" type="text" tabindex="1" />
+            <label for="apellidos">Apellidos:</label>
+            <input name="apellidos" id="apellidos" type="text" tabindex="2" />
+          </fieldset>
+        <br>  
+        <input type="submit">
+    </form>
+</body>
+
+</html>
