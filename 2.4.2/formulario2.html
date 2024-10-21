@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form_button{
+            display: block;
+            margin-top: 15px;
+            background-color: rgb(79, 60, 96);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto: asoriabosso@gmail.com">
+        <fieldset>
+            <legend>Personajes</legend>
+            <label for="name">Superhéroe favorito</label>
+            <input list="Superhéroe" name="Superhéroe">
+                <datalist id="Superhéroe">
+                    <option value="Capitán América">
+                    <option value="Superman">
+                    <option value="Thor">
+                    <option value="Ironman">
+                    <option value="Hulk">
+                </datalist>
+            <br>
+            <label for="name">Color:
+            <input type="color" name="color">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input name="nombre" id="nombre" type="text" tabindex="1" />
+            <label for="telefono">Teléfono:</label>
+            <input name="telefono" id="telefono" type="tel" tabindex="2" /> Formato: 9999999
+            <label for="fecha">Fecha:</label>
+            <input name="fecha" id="fecha" type="date" tabindex="3" />
+            <label for="contraseña">Contraseña:</label>
+            <input name="contraseña" id="contraseña" type="password" tabindex="4" />
+            
+          </fieldset>
+          <fieldset>
+            <legend>Selecciona forma de contacto preferida:</legend>
+            <input type="radio" name="radio"/>Email
+            <input type="radio" name="radio"/>Teléfono
+            <input type="radio" name="radio"/>Carta
+             
+          </fieldset>
+          <fieldset>
+            <legend>Elige tus asignaturas favorita:</legend>
+            <form>
+                <label>
+                  <input type="checkbox" name="Asignaturas" value="Aplicaciones Web"> Aplicaciones Web
+                </label>
+                <label>
+                  <input type="checkbox" name="Asigntaruas" value="Seguridad Informatica"> Seguridad Informáica
+                </label>
+              </form>
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <input 
+          </fieldset>
+        <br>  
+        <input type="submit"> <input type="reset">
+    </form>
+</body>
+
+</html>
