@@ -1,3 +1,27 @@
-{ color::
-    saddas
+span {
+    font-weight: bolder;
+}
+h1 {
+    color: aqua;
+}
+h2 {
+    color: darkmagenta;
+}
+h3 {
+    font-weight: bolder;
+    font-style: italic;
+}
+.red {
+    color: red;
+}
+#gris {
+    text-transform: uppercase;
+    color: grey;
+}
+code {
+    font-weight: bolder;
+    color: blue;
+}
+.verde {
+    color: green;
 }
