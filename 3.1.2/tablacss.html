@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Horario SMR</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
     <table>
         <caption>Horario 2ºSMR 24-25</caption>
         <thead>
@@ -19,52 +21,56 @@
         </thead>
         <tbody>
             <tr>
-                <td id="hora">8:30</td>
-                <td rowspan="2">Seg. inf</td>
-                <td rowspan="2">Serv. red</td>
-                <td rowspan="2">Serv. red</td>
-                <td>Inglés</td>
-                <td>Seg. inf</td>
+                <td>8:30</td>
+                <td rowspan="2" class="seg-inf">Seg. inf</td>
+                <td rowspan="2" class="serv-red">Serv. red</td>
+                <td rowspan="2" class="serv-red">Serv. red</td>
+                <td class="ingles">Inglés</td>
+                <td class="seg-inf">Seg. inf</td>
             </tr>
             <tr>
-                <td id="hora">9:25</td>
-                <td>Seg. inf</td>
-                <td>Empresa</td>
+                <td>9:25</td>
+                <td class="seg-inf">Seg. inf</td>
+                <td class="empresa">Empresa</td>
             </tr>
             <tr>
-                <td id="hora">10:20</td>
-                <td>Empresa</td>
-                <td>SOR</td>
-                <td>Inglés</td>
-                <td>Serv. red</td>
-                <td>SOR</td>
+                <td>10:20</td>
+                <td class="empresa">Empresa</td>
+                <td class="sor">SOR</td>
+                <td class="ingles">Inglés</td>
+                <td class="serv-red">Serv. red</td>
+                <td class="sor">SOR</td>
             </tr>
             <tr>
-                <td id="hora">11:15-11:40</td>
-                <td colspan="5" id="RECREO">RECREO</td>
+                <td>11:15-11:40</td>
+                <td colspan="5" class="recreo" style="text-align: center;">RECREO</td>
             </tr>
             <tr>
-                <td id="hora">11:40</td>
-                <td>SOR</td>
-                <td>SOR</td>
-                <td>Empresa</td>
-                <td rowspan="2">Ap. web</td>
-                <td>SOR</td>
+                <td>11:40</td>
+                <td class="sor">SOR</td>
+                <td class="sor">SOR</td>
+                <td class="empresa">Empresa</td>
+                <td rowspan="2" class="ap-web">Ap. web</td>
+                <td class="sor">SOR</td>
             </tr>
             <tr>
-                <td id="hora">12:35</td>
-                <td>Ap. web</td>
-                <td rowspan="2">Ap. web</td>
-                <td rowspan="2">SOR</td>
-                <td rowspan="2">Serv. red</td>
+                <td>12:35</td>
+                <td class="ap-web">Ap. web
+                    <span id="aula">
+                        <a href="https://aulavirtual32.educa.madrid.org/ies.sierradeguadarrama.soto/course/section.php?id=3486">Aulav.</a>
+                    </span>
+                </td>
+                <td rowspan="2" class="ap-web">Ap. web</td>
+                <td rowspan="2" class="sor">SOR</td>
+                <td rowspan="2" class="serv-red">Serv. red</td>
             </tr>
             <tr>
-                <td id="hora">13:30</td>
-                <td>Ser. red</td>
-                <td>SOR</td>
+                <td>13:30</td>
+                <td class="serv-red">Ser. red</td>
+                <td class="sor">SOR</td>
             </tr>
         </tbody>
     </table>
-
 </body>
+
 </html>

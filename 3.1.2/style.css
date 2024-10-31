@@ -1,26 +1,111 @@
+table {
+    min-height: 500px;
+    min-width: 700px;
+}
+
 caption {
-    background-color: darkmagenta;
+    background-color: rgb(182, 54, 182);
     border: 5px;
     border-radius:5px;
     color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
 }
+
 td {
     border: 5px outset;
 }
+
 th {
     padding: 10px;
     background-color: rgb(169, 187, 245);
-    border-radius: 5px;
+    border-radius: 10px;
 }
-#hora {
-    border: 5px; 
-    background-color: blue; 
-    color: white;
+
+td, th{
     text-align: center;
-    border-radius: 5px;
-    
 }
-#RECREO {
-    background-color: rgb(255, 255, 143);
-    text-align: center;
+
+th:nth-child(1) {
+    background-color: white;
+}
+
+td:nth-child(1) {
+    background-color: rgb(118, 118, 243);
+    border: 0px outset;
+    border-radius: 10px; 
+}
+
+.recreo {
+    background-color: rgb(219, 157, 243);
+}
+
+.seg-inf {
+    background-color: rgb(236, 74, 142);
+}
+
+.serv-red {
+    background-color: rgb(252, 129, 129);
+}
+
+.ingles {
+    background-color: rgb(166, 241, 241);
+}
+
+.sor {
+    background-color: rgb(253, 138, 96);
+}
+
+.empresa {
+    background-color: rgb(243, 41, 82);
+}
+
+.ap-web {
+    background-color: rgb(166, 88, 240);
+}
+
+.recreo:hover {
+    background-color: white;
+}
+
+.seg-inf:hover {
+    background-color: white;
+}
+
+.serv-red:hover {
+    background-color: white;
+}
+
+.ingles:hover {
+    background-color: white;
+}
+
+.sor:hover {
+    background-color: white;
+}
+
+.empresa:hover {
+    background-color: white;
+}
+
+.ap-web:hover {
+    background-color: white;
+}
+
+.recreo:hover {
+    background-color: white;
+}
+
+#aula{
+    visibility: hidden;
+    display: block;
+}
+
+td.ap-web:hover #aula {
+    visibility: visible;
+    display: block;
+}
+td:hover {
+    background-color: white;
 }
