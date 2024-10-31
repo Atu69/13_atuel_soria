@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-        label {
-            display: block;
-            margin-top: 10px;
-        }
+<title>Formularios avanzados</title>
 
-        .form_button{
-            display: block;
-            margin-top: 15px;
-            background-color: rgb(79, 60, 96);
-            color: white;
-            border-radius: 10px;
-        }
-    </style>
+<head>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .form_button {
+      display: block;
+      margin-top: 15px;
+      background-color: rgb(79, 60, 96);
+      color: white;
+      border-radius: 10px;
+    }
+  </style>
 </head>
+
 <body>
-    <form action="mailto: asoriabosso@gmail.com">
-        <fieldset>
-            <legend>Personajes</legend>
-            <label for="name">Superhéroe favorito</label>
-            <input list="Superhéroe" name="Superhéroe">
-                <datalist id="Superhéroe">
-                    <option value="Capitán América">
-                    <option value="Superman">
-                    <option value="Thor">
-                    <option value="Ironman">
-                    <option value="Hulk">
-                </datalist>
-            <br>
-            <label for="name">Color:
-            <input type="color" name="color">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Información Personal</legend>
-            <label for="nombre">Nombre:</label>
-            <input name="nombre" id="nombre" type="text" tabindex="1" />
-            <label for="telefono">Teléfono:</label>
-            <input name="telefono" id="telefono" type="tel" tabindex="2" /> Formato: 9999999
-            <label for="fecha">Fecha:</label>
-            <input name="fecha" id="fecha" type="date" tabindex="3" />
-            <label for="contraseña">Contraseña:</label>
-            <input name="contraseña" id="contraseña" type="password" tabindex="4" />
-            
-          </fieldset>
-          <fieldset>
-            <legend>Selecciona forma de contacto preferida:</legend>
-            <input type="radio" name="radio"/>Email
-            <input type="radio" name="radio"/>Teléfono
-            <input type="radio" name="radio"/>Carta
-             
-          </fieldset>
-          <fieldset>
-            <legend>Elige tus asignaturas favorita:</legend>
-            <form>
-                <label>
-                  <input type="checkbox" name="Asignaturas" value="Aplicaciones Web"> Aplicaciones Web
-                </label>
-                <label>
-                  <input type="checkbox" name="Asigntaruas" value="Seguridad Informatica"> Seguridad Informáica
-                </label>
-              </form>
-          </fieldset>
-          <fieldset>
-            <legend>Otros</legend>
-            <label for="email">Pon tu email:</label>
-            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
-            <form>
-              <label for="url">Introduce una URL:</label>
-              <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
-            </form>
-            <label for="appt">Hora de comer:</label>
-            <input type="time" id="appt" name="appt" min="13:00" max="16:00" required />
-            <small>La comida es de 1 pm a 4 pm</small>
-            <div>
-              <label for="userId">Usuario</label>
-              <input type="text" id="userId" name="userId" />
-            </div>
-            <input type="image" id="image" alt="Login" style="width:25px" src="pichula.png" />
-            <label for="avatar">Elige tu avatar favorito:</label>
-            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-          </fieldset>
-        <br>  
-        <input type="submit"> <input type="reset">
-    </form>
+  <form action="mailto: asoriabosso@gmail.com" method="post">
+    <fieldset>
+      <legend>Personajes</legend>
+      <label for="name">Superhéroe favorito</label>
+      <input list="Superhéroe" name="Superhéroe">
+      <datalist id="Superhéroe">
+        <option value="Capitán América">
+        <option value="Superman">
+        <option value="Thor">
+        <option value="Ironman">
+        <option value="Hulk">
+      </datalist>
+      <br>
+      <label for="name">Color:
+        <input type="color" name="color">
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Información Personal</legend>
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" id="nombre" type="text" tabindex="1" />
+      <label for="telefono">Teléfono:</label>
+      <input name="telefono" id="telefono" type="tel" tabindex="2" /> Formato: 9999999
+      <label for="fecha">Fecha:</label>
+      <input name="fecha" id="fecha" type="date" tabindex="3" />
+      <label for="contraseña">Contraseña:</label>
+      <input name="contraseña" id="contraseña" type="password" tabindex="4" />
+
+    </fieldset>
+    <fieldset>
+      <legend>Selecciona forma de contacto preferida:</legend>
+      <input type="radio" name="radio" />Email
+      <input type="radio" name="radio" />Teléfono
+      <input type="radio" name="radio" />Carta
+
+    </fieldset>
+    <fieldset>
+      <legend>Elige tus asignaturas favorita:</legend>
+      <form>
+        <label>
+          <input type="checkbox" name="Asignaturas" value="Aplicaciones Web"> Aplicaciones Web
+        </label>
+        <label>
+          <input type="checkbox" name="Asigntaruas" value="Seguridad Informatica"> Seguridad Informáica
+        </label>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Otros</legend>
+      <label for="email">Pon tu email:</label>
+      <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+      <form>
+        <label for="url">Introduce una URL:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+          required />
+      </form>
+      <label for="appt">Hora de comer:</label>
+      <input type="time" id="appt" name="appt" min="13:00" max="16:00" required />
+      <small>La comida es de 1 pm a 4 pm</small>
+      <div>
+        <label for="userId">Usuario</label>
+        <input type="text" id="userId" name="userId" />
+      </div>
+      <input type="image" id="image" alt="Login" style="width:25px" src="pichula.png" />
+      <label for="avatar">Elige tu avatar favorito:</label>
+      <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+    </fieldset>
+    <br>
+    <input type="submit"> <input type="reset">
+  </form>
 </body>
 
 </html>
