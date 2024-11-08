@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.role {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e5e5e5;
+    margin: 10px 0 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.job, .school {
+    margin-bottom: 15px;
+}
+
+.job h3, .school h3 {
+    font-size: 20px;
+    color: #00aaff;
+}
+
+.company, .institution {
+    font-size: 14px;
+    color: #666;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+}
