@@ -77,30 +77,47 @@ section:not(last-child) {
     justify-content: space-between;
 }
 
-#nav ul {
+nav ul {
     display: flex;
     justify-content: center ;
     list-style: none;
 }
 
-#nav ul li {
+nav ul li {
     background-color: rgb(13, 62, 117);
     padding: 10px 15px;
     border: 5px solid rgb(0, 0, 0);
     margin: auto;
 }
 
-#nav ul li:hover {
+nav ul li:hover {
     background-color: rgb(23, 22, 49);
 }
+nav ul li:before{
+   content: ''; 
+}
 
-#nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
 
 }
-.languages ul>li::before {
-    visibility: hidden;
+.languages ul>li:before {
+    content: '';
+    padding-right: 0;
 }
 
+nav ul li.active{
+    text-decoration: underline;
+    border-color: white;;
+    cursor: default;
+}
+
+nav ul li.active a{
+    cursor: default;
+}
+
+nav ul li.active:hover{
+    background-color: rgb(13, 62, 117);
+}
