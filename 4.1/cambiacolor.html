@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cambiar Color Div</title>
+    <style>
+        #color_div {
+            width: 200px;
+            height: 200px;
+        
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="color_div" onmouseenter="hola()" onmouseleave="adios()">¡Pasa el ratón!</div>
+    <button onclick="cambiarColor()">Cambiar Color</button>
+
+    <script>
+        function cambiarColor() {
+            var div = document.getElementById('color_div');
+            var divColor = div.style.backgroundColor;
+
+            if (divColor === "grey") {
+                div.style.backgroundColor = "red";
+            } else if (divColor === "red") {
+                div.style.backgroundColor = "green";
+            } else {
+                div.style.backgroundColor = "grey";
+            }
+        }
+
+        function hola() {
+            document.getElementById("color_div").innerHTML += " HOLA!";
+        }
+
+        function adios() {
+            document.getElementById("color_div").innerHTML += " ADIOS!";
+        }
+    </script>
+</body>
+</html>
