@@ -1,0 +1,12 @@
+h1 {
+    background-color: rgb(255, 249, 237);
+}
+
+body {
+    background-color: rgb(151, 140, 136);
+}
+
+li {
+    color: white;
+    background-color: grey;
+}
